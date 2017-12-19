@@ -1,13 +1,13 @@
-package learning;
+package learning.start;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
-//@EnableAutoConfiguration
-//@ComponentScan
-@SpringBootApplication
+@EnableAutoConfiguration
+@ComponentScan(basePackages={"learning.endpoint", "learning.util"})
+//@SpringBootApplication
 public class ApplicationStart {
 
 	public static void main(String[] args) {
