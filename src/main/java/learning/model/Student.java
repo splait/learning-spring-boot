@@ -41,4 +41,11 @@ public class Student {
 	public String getName(){
 		return this.name;
 	}
+	
+	@Override
+	public boolean equals(Object obj) {
+		if(obj != null && this.getClass() == obj.getClass() && this.getId() == ((Student)obj).getId())
+			return true;
+		return false;
+	}
 }
